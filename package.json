@@ -1,0 +1,17 @@
+{
+  "devDependencies": {
+    "vuepress": "^2.0.0-beta.35"
+  },
+  "name": "kehengch.github.io",
+  "version": "1.0.1",
+  "description": "blog",
+  "main": "index.js",
+  "repository": "git@github.com:kehengch/kehengch.github.io.git",
+  "author": "kart jim",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "server": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  }
+}
