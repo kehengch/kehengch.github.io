@@ -21,6 +21,7 @@ footerHtml: true
 footer: Powered by <a href="https://v2.vuepress.vuejs.org">vuepress</a> | Copyright © 2021 kart jim
 ---
 
-::: danger 待解决问题
-- 夜间模式 `darkMode: true`
+::: tip 已解决
+- 夜间模式
+  - 升级vuepress版本！
 :::
