@@ -1,3 +1,6 @@
+---
+sidebar: false
+---
 # 渔业导论笔记
 
 :tada:
