@@ -3,7 +3,7 @@ module.exports = {
     lang: 'zh-CN',
     title: '陈科衡的博客',
     description: '陈科衡的vuepress博客',
-    head: [['link', { rel: 'icon', href: '/img/light.png' }]],
+    head: ['link', { rel: 'icon', href: '/img/light.png' }],
 
     // 主题和它的配置
     theme: '@vuepress/theme-default',
@@ -19,6 +19,10 @@ module.exports = {
             {
                 text: '主页',
                 link: '/'
+            },
+            {
+                text: 'Vue',
+                link: '/vue'
             },
             {
                 text: '海洋',
