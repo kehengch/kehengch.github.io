@@ -30,3 +30,61 @@ sidebar: false
 |😄 Pronouns: ...|
 |⚡ Fun fact: ...|
 |👍Dynamically generated stats for [github readmes：](https://github.com/anuraghazra/github-readme-stats)|
+
+:::: code-group
+::: code-group-item bash
+
+```bash
+# run server
+npm run server
+# build file
+npm run build
+```
+
+:::
+::: code-group-item workflow
+
+```yml
+# github action - workflows
+name: docs
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+jobs:
+  docs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: '14'
+      - name: Cache dependencies
+        uses: actions/cache@v2
+        id: yarn-cache
+        with:
+          path: |
+            **/node_modules
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
+      - name: Install dependencies
+        if: steps.yarn-cache.outputs.cache-hit != 'true'
+        run: yarn --frozen-lockfile
+      - name: Build VuePress site
+        run: yarn docs:build
+      - name: Deploy to GitHub Pages
+        uses: crazy-max/ghaction-github-pages@v2
+        with:
+          target_branch: gh-pages
+          build_dir: docs/.vuepress/dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+```
+
+:::
+::::
+

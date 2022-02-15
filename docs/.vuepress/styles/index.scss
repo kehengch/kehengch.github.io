@@ -19,9 +19,12 @@ header.navbar{
   box-shadow: 0 5px 10px rgba(0,0,0,.05);
 }
 /* dark mode */
-.dark ul.navbar-dropdown{
-  box-shadow: 0 20px 30px rgba(120,120,120,.1),0 3px 8px rgba(120,120,120,.05);
+.dark {
+  header.navbar{
+    box-shadow: 0 5px 10px rgba(255,255,255,.05);
+  }
+  ul.navbar-dropdown{
+    box-shadow: 0 20px 30px rgba(120,120,120,.1),0 3px 8px rgba(120,120,120,.05);
+  }
 }
-.dark header.navbar{
-  box-shadow: 0 5px 10px rgba(255,255,255,.05);
-}
+

@@ -20,7 +20,10 @@ features:
 footerHtml: true
 footer: Powered by <a href="https://v2.vuepress.vuejs.org">vuepress</a> | Copyright © 2021 kart jim
 ---
+## search
+for search: press `s` or `/` key.
 
+## foot
 ::: tip 已解决
 - 夜间模式
   - 升级vuepress版本！
