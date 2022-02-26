@@ -47,5 +47,6 @@ module.exports = {
         danger: '危险',
         notFound: ["Not Found", "404", "页面飞了~", "文章不存在！"],
         backToHome: '回到主页',
-    }
+
+    },
 }

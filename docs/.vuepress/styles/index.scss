@@ -27,4 +27,25 @@ header.navbar{
     box-shadow: 0 20px 30px rgba(120,120,120,.1),0 3px 8px rgba(120,120,120,.05);
   }
 }
-
+/* custom-container */
+.tip{
+  border-radius: 8px;
+  border: 1px dashed;
+}
+/* img */
+img:not(.logo){
+  box-shadow: 0 6px 14px 6px rgba(0,0,0,.03);
+}
+/* code-group */
+.code-group{
+  position: relative;
+  &::after{
+    content: '';
+    height: 5px;
+    width: 100%;
+    position: absolute;
+    bottom: -5px;left: 0;
+    // box-shadow: 0 -10px 20px rgba(0,0,0,.1);
+    background: #ffffff repeating-linear-gradient(45deg,transparent,transparent 2%,#3eaf7c 2%,#3eaf7c 8%,transparent 8%,transparent 10%);
+  }
+}
