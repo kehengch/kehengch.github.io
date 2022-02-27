@@ -1,0 +1,1 @@
+const e={key:"v-59016e78",path:"/fishguide/",title:"\u6E14\u4E1A\u5BFC\u8BBA\u7B14\u8BB0 \u{1F389}",lang:"zh-CN",frontmatter:{sidebar:!1},excerpt:"",headers:[],git:{updatedTime:1644909669e3,contributors:[{name:"kartjim",email:"jjack_chen3@163.com",commits:3}]},filePathRelative:"fishguide/README.md"};export{e as data};
